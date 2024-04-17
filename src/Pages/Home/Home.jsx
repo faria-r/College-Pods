@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Colleges from "../../Components/CollegeCards/Colleges";
 import Banner from "../../Components/Banner/Banner";
 import PopularColleges from "../../Components/PopularColleges/PopularColleges";
+import ImageGallery from "../../Components/ImageGallery/ImageGallery";
 
 
 
@@ -22,6 +23,7 @@ const Home = () => {
       <Colleges input={inputText}></Colleges>
 
       <PopularColleges></PopularColleges>
+      <ImageGallery></ImageGallery>
     </div>
   );
 };
