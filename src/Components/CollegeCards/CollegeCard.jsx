@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const CollegeCard = ({college}) => {
 
@@ -13,7 +14,9 @@ const CollegeCard = ({college}) => {
     <p>Admission Deadline:{college.registered}</p>
     <p>:{college.registered}</p>
     <div className="card-actions justify-end">
-      <button className="btn btn-primary">Details</button>
+    <Link to={`/details/${college._id}`}>
+              <button className="btn bg-rose-700">Veiw Details</button>
+            </Link>
     </div>
   </div>
 </div>

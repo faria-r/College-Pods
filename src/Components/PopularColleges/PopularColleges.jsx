@@ -4,7 +4,7 @@ import CollegeCard from '../CollegeCards/CollegeCard';
 const PopularColleges = () => {
     const [colleges,setColleges] = useState([]);
     useEffect(()=>{
-        fetch('Colleges.json')
+        fetch('http://localhost:5000/collegeList')
         .then(res => res.json())
         .then(data =>{
             setColleges(data)
