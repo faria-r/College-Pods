@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { useState } from "react";
+import Search from "../../Components/Search/Search";
+
 
 const Home = () => {
-    return (
-        <div>
-            <p className='text-green-600 text-3xl'>Welcome Back</p>
-        </div>
-    );
+  return (
+    <div>
+      <Search></Search>
+    </div>
+  );
 };
 
 export default Home;
