@@ -26,8 +26,8 @@ const Home = () => {
      <div>
      <PopularColleges></PopularColleges>
      </div>
-      <div>
-        <h2 className="text-3xl w-[50%] mx-auto">Proud Graduates</h2>
+      <div className="text-center">
+        <h2 className="text-4xl w-3/4 mx-auto">Proud Graduates</h2>
         <ImageGallery></ImageGallery>
       </div>
       <div>
