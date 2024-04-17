@@ -3,6 +3,7 @@ import Colleges from "../../Components/CollegeCards/Colleges";
 import Banner from "../../Components/Banner/Banner";
 import PopularColleges from "../../Components/PopularColleges/PopularColleges";
 import ImageGallery from "../../Components/ImageGallery/ImageGallery";
+import Researche from "../../Components/Research/Researche";
 
 
 
@@ -22,8 +23,17 @@ const Home = () => {
         {/* <Banner></Banner> */}
       <Colleges input={inputText}></Colleges>
 
-      <PopularColleges></PopularColleges>
-      <ImageGallery></ImageGallery>
+     <div>
+     <PopularColleges></PopularColleges>
+     </div>
+      <div>
+        <h2 className="text-3xl w-[50%] mx-auto">Proud Graduates</h2>
+        <ImageGallery></ImageGallery>
+      </div>
+      <div>
+        <Researche></Researche>
+      </div>
+   
     </div>
   );
 };

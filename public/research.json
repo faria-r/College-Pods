@@ -1,0 +1,23 @@
+[
+    {
+      "_id": "66200423d5b58d8f353ed446",
+      "picture": "https://c8.alamy.com/comp/2C4DNBF/finger-touching-tablet-with-web-technology-icons-and-data-science-inscription-web-technology-concept-2C4DNBF.jpg",
+      "links": "https://www.pnas.org/doi/pdf/10.1073/pnas.1702076114",
+      "name": "Data Science",
+      "about": "Data science extracts insights from data, empowering informed decision-making and driving innovation across industries through pattern recognition and predictive analytics."
+    },
+    {
+      "_id": "6620042309fa9f95a6992513",
+      "picture": "https://postsecondaryreadiness.org/wp-content/uploads/2018/03/classroom-focus-teacher-1024x512.jpg",
+      "links": "https://download.zendy.io/url/https://journals.sagepub.com/doi/pdf/10.1177/1742271X13486416",
+      "name": "Education",
+      "about": "Education research papers enhance teaching methods and student outcomes by exploring innovative approaches and evaluating educational interventions."
+    },
+    {
+      "_id": "66200423381282bcb7a5ebf7",
+      "picture": "https://www.freecodecamp.org/news/content/images/2022/08/A6125B75-DB79-4448-94C9-E6ABD3E0E3E9.jpeg",
+      "links": "https://pubs.acs.org/doi/pdf/10.1021/acs.jpcb.8b00035",
+      "name": "Machine Learning",
+      "about": "Machine learning is pivotal for automating tasks, extracting insights, and improving decision-making across industries, driving innovation and efficiency in diverse applications."
+    }
+  ]
