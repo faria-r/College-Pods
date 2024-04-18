@@ -42,7 +42,59 @@ const AdmissionFormDetails = ({item,handleAddAdmission}) => {
                 //  defaultValue={user?.email}
                  placeholder="email"
                  className="input input-bordered"
-                 readOnly
+               
+               />
+             </div>
+             <div className="form-control">
+               <label className="label">
+                 <span className="label-text">Subject</span>
+               </label>
+               <input
+                 type="text"
+                 name="subject"
+                //  defaultValue={user?.email}
+                 placeholder="Subject"
+                 className="input input-bordered"
+                 
+               />
+             </div>
+             <div className="form-control">
+               <label className="label">
+                 <span className="label-text">Phone</span>
+               </label>
+               <input
+                 type="text"
+                 name="phone"
+                //  defaultValue={user?.email}
+                 placeholder="Phone No:"
+                 className="input input-bordered"
+                 
+               />
+             </div>
+             <div className="form-control">
+               <label className="label">
+                 <span className="label-text">Address</span>
+               </label>
+               <input
+                 type="text"
+                 name="address"
+               
+                 placeholder="Current Address"
+                 className="input input-bordered"
+                
+               />
+             </div>
+             <div className="form-control">
+               <label className="label">
+                 <span className="label-text">Date-Of-Birth</span>
+               </label>
+               <input
+                 type='date'
+                 name="dob"
+               
+                 placeholder="Date Of Birth"
+                 className="input input-bordered"
+                
                />
              </div>
              <div className="form-control">
@@ -82,14 +134,14 @@ const AdmissionFormDetails = ({item,handleAddAdmission}) => {
                />
              </div>
              <textarea
-               className="textarea textarea-secondary"
-               name="review"
-               placeholder="Review Goes Here"
+               className="textarea textarea-primary w-full text-center"
+               name="research"
+               placeholder="Please Tell Us Your Research Interest Feild"
              ></textarea>
                 
            </div>
            <div className="form-control mt-6">
-             <button className="btn bg-blue-700 px-12 mx-auto">Submit</button>
+             <button className="btn bg-blue-700 px-12 mx-auto text-white">Submit</button>
            </div>
          </div>
        </form>

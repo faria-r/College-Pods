@@ -1,14 +1,11 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 import AdmissionFormDetails from './AdmissionFormDetails';
-
 const AdmissionForm = () => {
     const clgAdmission= useLoaderData();
-    console.log(clgAdmission,'admission');
-
     //function to post admission data on server
     const handleAddAdmission = (event) =>{
-event.prevenDefault();
+event.preventDefault();
 const form = event.target;
 const name= form.name.value;
 const email = form.email.value;
@@ -18,9 +15,9 @@ const phone= form.phone.value;
 const address = form.address.value;
 const dob= form.dob.value;
 const id = form.id.value;
+const research= form.research.value
 
-const admissionInfo = {
-    form ,
+const admissionInfos = {
     name,
     email ,
     photo ,
@@ -29,19 +26,24 @@ const admissionInfo = {
     address ,
     dob,
     id ,
+    research
 };
-fetch('/admissionInfo',{
+
+fetch('http://localhost:5000/admissionInfo',{
     method:"POST",
     headers:{
         'content-type':'application/json'
     },
-    body:JSON.stringify(admissionInfo)
+    body:JSON.stringify(admissionInfos)
 })
 .then(res => res.json())
 .then(data =>{
     console.log(data);
     if(data.acknowledged){
         console.log('successfully stored')
+    }
+    else{
+        console.log('not stored')
     }
     form.reset();
 })
