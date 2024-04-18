@@ -6,6 +6,7 @@ import DetailedCollegeInfo from "../Components/CollegeCards/DetailedCollegeInfo/
 import Admission from "../Pages/Admission/Admission";
 import AdmissionForm from "../Pages/Admission/AdmissionForm";
 import MyCollege from "../Pages/MyCollege/MyCollege";
+import ReviewForm from "../Components/Review/ReviewForm/ReviewForm";
 
 export const router = createBrowserRouter([
   {
@@ -34,10 +35,16 @@ export const router = createBrowserRouter([
         path:'/admission/:id',
         loader:({params}) => fetch(`http://localhost:5000/admission/${params.id}`),
         element:<AdmissionForm></AdmissionForm>
-    },{
+    },
+    {
         path: "/myCollege",
         loader:()=>fetch('http://localhost:5000/myCollege'),
         element: <MyCollege></MyCollege>,
+      },
+    {
+        path: "/myCollege/:id",
+        loader:({params})=>fetch(`http://localhost:5000/myCollege/${params.id}`),
+        element: <ReviewForm></ReviewForm>,
       },
     ],
   },

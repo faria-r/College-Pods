@@ -15,7 +15,7 @@ const Home = () => {
       }
   return (
     <div>
-        <div>
+        <div className="bg-transparent mt-8">
                <div className="form-control">
       <input    onChange={inputHandler} type="text" placeholder="Search Colleges" className="input input-bordered w-24 md:w-[30%] mx-auto" />
     </div>
