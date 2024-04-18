@@ -10,7 +10,7 @@ const ReviewSection = () => {
     },[])
     return (
         <div>
-          <div className='flex justify-evenly items-center p-4 m-8 w-3/4 mx-auto'>
+          <div className='lg:flex  gap-3 justify-evenly items-center p-4 m-8 w-3/4 mx-auto'>
             {
                 review.map(item => <ReviewCard key={item._id} item={item}></ReviewCard>)
             }

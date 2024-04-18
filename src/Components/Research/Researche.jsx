@@ -20,7 +20,7 @@ const Researche = () => {
                     <p className='text-gray-400'>Research papers serve as building blocks for future advancements by documenting current knowledge, laying foundations for new ideas, and inspiring further investigation. Through rigorous analysis and dissemination of findings, they provide a roadmap for innovation, shaping the trajectory of progress across various fields.</p>
                 </div>
             </div>
-            <div className='grid grid-cols-3 gap-2 w-[90vw] mx-auto mt-12 mb-16'> 
+            <div className='grid grid-cols-1 lg:grid-cols-3 gap-2 w-[90vw] mx-auto mt-12 mb-16'> 
 {
     research.map(i=> <ResearchCard key={i._id} i={i}></ResearchCard>)
 }

@@ -11,7 +11,7 @@ const ReviewCard = ({item}) => {
     return (
         <div>
             
-            <div className="card w-[350px] bg-base-100 shadow-xl">
+            <div className="card w-[350px] mb-6 bg-base-100 shadow-xl">
             <h2 className='text-center text-xl font-mono font-extralight'>{collegeName}</h2>
   {/* <figure><img src={clgPhoto} alt="college"/></figure> */}
   <div className="card-body">

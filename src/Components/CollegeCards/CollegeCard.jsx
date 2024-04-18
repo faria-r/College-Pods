@@ -17,7 +17,7 @@ const CollegeCard = ({college}) => {
     
     <div className='flex justify-around w-auto'>
     <li className='list-disc marker:text-red-600  '>Sports</li>
-    <li className='list-disc marker:text-yellow-400 '>Events</li><span><FcRight/></span>
+    <li className='list-disc marker:text-yellow-400 '>Events</li>
     </div>
     <div>
     <li className='list-disc marker:text-blue-400 text-center'><a className='underline  underline-offset-4 '>Researches</a></li>

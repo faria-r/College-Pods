@@ -7,6 +7,8 @@ import Admission from "../Pages/Admission/Admission";
 import AdmissionForm from "../Pages/Admission/AdmissionForm";
 import MyCollege from "../Pages/MyCollege/MyCollege";
 import ReviewForm from "../Components/Review/ReviewForm/ReviewForm";
+import LoginForm from "../Pages/Login/LoginForm";
+import SignUp from "../Pages/SignUp/SignUp";
 
 export const router = createBrowserRouter([
   {
@@ -17,6 +19,14 @@ export const router = createBrowserRouter([
         path: "/",
         element: <Home></Home>,
       },
+      {
+        path:'/login',
+        element:<LoginForm></LoginForm>
+    },
+    {
+        path:'/signup',
+        element:<SignUp></SignUp>
+    },
       {
         path: "/college",
         element: <AllColleges></AllColleges>,
