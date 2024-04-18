@@ -4,6 +4,7 @@ import Banner from "../../Components/Banner/Banner";
 import PopularColleges from "../../Components/PopularColleges/PopularColleges";
 import ImageGallery from "../../Components/ImageGallery/ImageGallery";
 import Researche from "../../Components/Research/Researche";
+import ReviewSection from "../../Components/ReviewSection/ReviewSection";
 
 
 
@@ -32,6 +33,12 @@ const Home = () => {
       </div>
       <div>
         <Researche></Researche>
+      </div>
+      <div>
+        <div>
+          <h2 className="text-4xl text-center font-thin">What Our Student's Say</h2>
+        </div>
+        <ReviewSection></ReviewSection>
       </div>
    
     </div>
