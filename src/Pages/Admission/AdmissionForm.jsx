@@ -4,6 +4,7 @@ import AdmissionFormDetails from './AdmissionFormDetails';
 
 const AdmissionForm = () => {
     const clgAdmission= useLoaderData();
+    console.log(clgAdmission,'admission');
 
     //function to post admission data on server
     const handleAddAdmission = (event) =>{
