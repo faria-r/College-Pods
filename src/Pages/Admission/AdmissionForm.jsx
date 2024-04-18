@@ -1,8 +1,9 @@
 import React from 'react';
-import { useLoaderData } from 'react-router-dom';
+import { useLoaderData, useNavigate } from 'react-router-dom';
 import AdmissionFormDetails from './AdmissionFormDetails';
 const AdmissionForm = () => {
     const clgAdmission= useLoaderData();
+    const navigate = useNavigate();
     //function to post admission data on server
     const handleAddAdmission = (event) =>{
 event.preventDefault();
@@ -15,7 +16,8 @@ const phone= form.phone.value;
 const address = form.address.value;
 const dob= form.dob.value;
 const id = form.id.value;
-const research= form.research.value
+const collegeName = form.collegeName.value;
+const research= form.research.value;
 
 const admissionInfos = {
     name,
@@ -26,7 +28,8 @@ const admissionInfos = {
     address ,
     dob,
     id ,
-    research
+    research,
+    collegeName
 };
 
 fetch('http://localhost:5000/admissionInfo',{
@@ -45,6 +48,7 @@ fetch('http://localhost:5000/admissionInfo',{
     else{
         console.log('not stored')
     }
+    navigate('/myCollege')
     form.reset();
 })
 

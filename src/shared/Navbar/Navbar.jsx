@@ -14,7 +14,7 @@ const Navbar = () => {
       <li><Link to='/'>Home</Link></li>
         <li><Link to='/college'>Colleges</Link></li>
         <li><Link to='/admission'>Admission</Link></li>
-        <li><a>My College</a></li>
+        <li><Link to='/myCollege'>My College</Link></li>
       </ul>
     </div>
     <a className="btn btn-ghost text-xl">College-Pods</a>
@@ -24,7 +24,8 @@ const Navbar = () => {
     <li><Link to='/'>Home</Link></li>
     <li><Link to='/college'>Colleges</Link></li>
       <li><Link to='/admission'>Admission</Link></li>
-        <li><a>My College</a></li>
+      <li><Link to='/myCollege'>My College</Link></li>
+      
     </ul>
   </div>
   <div className="navbar-end">
