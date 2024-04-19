@@ -14,12 +14,12 @@ import { initializeApp } from "firebase/app";
 // };
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDm9MqkfaWUusNy0TZ7g0vbY72e11Gpr6Y",
-  authDomain: "collegepods-d1b1e.firebaseapp.com",
-  projectId: "collegepods-d1b1e",
-  storageBucket: "collegepods-d1b1e.appspot.com",
-  messagingSenderId: "1031546253538",
-  appId: "1:1031546253538:web:80a4e8a62b70cc15576ebb"
+  apiKey: import.meta.env.VITE_apiKey,
+  authDomain: import.meta.env.VITE_authDomain,
+  projectId: import.meta.env.VITE_projectId,
+  storageBucket: import.meta.env.VITE_storageBucket,
+  messagingSenderId: import.meta.env.VITE_messagingSenderId,
+  appId: import.meta.env.VITE_appId
 };
 
 // Initialize Firebase

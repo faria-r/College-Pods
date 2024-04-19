@@ -4,7 +4,7 @@ import CollegeCard from "../CollegeCards/CollegeCard";
 const PopularColleges = () => {
   const [colleges, setColleges] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/collegeList")
+    fetch("https://college-pods-server-bxw8ogyva-fariars-projects.vercel.app/collegeList")
       .then((res) => res.json())
       .then((data) => {
         setColleges(data);

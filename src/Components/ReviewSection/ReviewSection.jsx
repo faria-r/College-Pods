@@ -4,7 +4,7 @@ import ReviewCard from './ReviewCard/ReviewCard';
 const ReviewSection = () => {
     const [review,setReview] = useState([]);
     useEffect(()=>{
-        fetch('http://localhost:5000/reviews')
+        fetch('https://college-pods-server-bxw8ogyva-fariars-projects.vercel.app/reviews')
         .then(res => res.json())
         .then(data => setReview(data))
     },[])

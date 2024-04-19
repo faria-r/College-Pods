@@ -33,27 +33,27 @@ export const router = createBrowserRouter([
       },
       {
         path:'/details/:id',
-        loader:({params})=> fetch(`http://localhost:5000/details/${params.id}`),
+        loader:({params})=> fetch(`https://college-pods-server-bxw8ogyva-fariars-projects.vercel.app/details/${params.id}`),
         element:<DetailedCollegeInfo></DetailedCollegeInfo>
     },
     {
         path:'/admission',
-        loader:()=> fetch('http://localhost:5000/admission'),
+        loader:()=> fetch('https://college-pods-server-bxw8ogyva-fariars-projects.vercel.app/admission'),
         element:<Admission></Admission>
     },
     {
         path:'/admission/:id',
-        loader:({params}) => fetch(`http://localhost:5000/admission/${params.id}`),
+        loader:({params}) => fetch(`https://college-pods-server-bxw8ogyva-fariars-projects.vercel.app/admission/${params.id}`),
         element:<AdmissionForm></AdmissionForm>
     },
     {
         path: "/myCollege",
-        loader:()=>fetch('http://localhost:5000/myCollege'),
+        loader:()=>fetch('https://college-pods-server-bxw8ogyva-fariars-projects.vercel.app/myCollege'),
         element: <MyCollege></MyCollege>,
       },
     {
         path: "/myCollege/:id",
-        loader:({params})=>fetch(`http://localhost:5000/myCollege/${params.id}`),
+        loader:({params})=>fetch(`https://college-pods-server-bxw8ogyva-fariars-projects.vercel.app/myCollege/${params.id}`),
         element: <ReviewForm></ReviewForm>,
       },
     ],
