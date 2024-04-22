@@ -1,9 +1,10 @@
 import React, { useContext } from 'react';
 import { useForm } from 'react-hook-form';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../Context/AuthProvider';
 
 const SignUp = () => {
+  const navigate = useNavigate();
     const {register,handleSubmit} = useForm();
     const {createUser} = useContext(AuthContext)
     const handleSignIn = (data) => {
@@ -13,12 +14,13 @@ createUser(data.email,data.password)
     const user = result.user;
     console.log(user)
 })
+navigate('/login')
 .catch(error => console.log(error));
     }
     return (
         <div>
-        <div className="h-[800px] flex justify-center items-center">
-          <div className="w-96 p-6">
+        <div className="h-[800px] flex justify-center  items-center">
+          <div className="w-96 p-6 border bg-blue-100 border-blue-500">
             <h2 className="text-4xl text-center">SignUp</h2>
             <form
               onSubmit={handleSubmit(handleSignIn)}
@@ -43,11 +45,11 @@ createUser(data.email,data.password)
             </form>
             <p className="my-2">Already Registered? <Link className="text-blue-600" to='/login'>Please Login</Link></p>
   
-            <div className="divider">OR</div>
-            <div className="flex justify-between items-center gap-1">
+            {/* <div className="divider">OR</div>
+            <div className="text-center">
             <button className="btn btn-outline border border-blue-600">Continue with Google</button>
-            <button className="btn btn-outline border border-blue-600">Continue with Facebook</button>
-            </div>
+            <button className="btn my-4 btn-outline border border-blue-600">Continue with Facebook</button>
+            </div> */}
             
           </div>
         </div>

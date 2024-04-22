@@ -10,13 +10,13 @@ const Researche = () => {
     },[])
     return (
         <div>
-            <div className="flex w-3/4 mx-auto mt-36">
-                <div className='w-1/2'>
+            <div className="lg:flex w-3/4 mx-auto gap-3 mt-36">
+                <div className='lg:w-1/2 mx-auto'>
                     <h2 className='text-gray-400'>Recommended Researchs</h2>
                     <p className='text-2xl font-serif font-semibold'>Research for a Better Tomorrow</p>
                 </div>
                 <div className='border border-r-4 border-blue-600 mr-2'></div>
-                <div className='w-1/2'>
+                <div className='lg:w-1/2'>
                     <p className='text-gray-400'>Research papers serve as building blocks for future advancements by documenting current knowledge, laying foundations for new ideas, and inspiring further investigation. Through rigorous analysis and dissemination of findings, they provide a roadmap for innovation, shaping the trajectory of progress across various fields.</p>
                 </div>
             </div>

@@ -32,7 +32,7 @@ const admissionInfos = {
     collegeName
 };
 
-fetch('https://college-pods-server-bxw8ogyva-fariars-projects.vercel.app/admissionInfo',{
+fetch('https://college-pods-server.vercel.app/admissionInfo',{
     method:"POST",
     headers:{
         'content-type':'application/json'

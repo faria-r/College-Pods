@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import CollegeCard from './CollegeCard';
+import Banner from '../Banner/Banner';
 
 const Colleges = (props) => {
     const [colleges,setColleges] = useState([]);
     useEffect(()=>{
-        fetch('https://college-pods-server-bxw8ogyva-fariars-projects.vercel.app/collegeList')
+        fetch('https://college-pods-server.vercel.app/collegeList')
         .then(res => res.json())
         .then(data =>{
             setColleges(data)
@@ -13,6 +14,7 @@ const Colleges = (props) => {
     const filteredData = colleges.filter((el) => {
         if (props.input === '') {
             // return el;
+         
         }  
         else {
             return el.name.toLowerCase().includes(props.input)

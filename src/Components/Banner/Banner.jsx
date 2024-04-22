@@ -1,29 +1,37 @@
-import React from 'react';
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
 
+import './styles.css';
+
+// import required modules
+import { Pagination } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
 const Banner = () => {
+
   return (
-    <div>
-      <div className="carousel w-full">
-  <div id="item1" className="carousel-item w-full">
-    <img src="https://daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.jpg" className="w-full" />
-  </div> 
-  <div id="item2" className="carousel-item w-full">
-    <img src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg" className="w-full" />
-  </div> 
-  <div id="item3" className="carousel-item w-full">
-    <img src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg" className="w-full" />
-  </div> 
-  <div id="item4" className="carousel-item w-full">
-    <img src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" className="w-full" />
+  
+  <div className='mb-6 w-[95vw] mx-auto'>
+     <>
+      <Swiper
+        slidesPerView={'auto'}
+        spaceBetween={30}
+        pagination={{
+          clickable: true,
+        }}
+        modules={[Pagination]}
+        className="mySwiper"
+      >
+       <SwiperSlide><img src='https://imageio.forbes.com/specials-images/dam/imageserve/37722820/960x0.jpg?height=474&width=711&fit=bounds'/></SwiperSlide>
+      <SwiperSlide>
+      <img src='https://c0.wallpaperflare.com/preview/416/179/610/kings-college-cambridge-uk-university.jpg '/>
+      </SwiperSlide>
+      <SwiperSlide><img src='https://i.insider.com/57ab3062dd08955a1e8b4613?width=800&format=jpeg&auto=webp'/></SwiperSlide>
+      <SwiperSlide><img src='https://content.jdmagicbox.com/comp/mysore/w5/0821px821.x821.190323090604.b9w5/catalogue/christ-college-mysuru-mysore-0zzj4dgz5f.jpg'/></SwiperSlide>
+      <SwiperSlide><img src='https://study-eu.s3.eu-west-1.amazonaws.com/uploads/image/path/132/wide_fullhd_ucl-university-college-london.jpg'/></SwiperSlide>
+      </Swiper>
+    </>
   </div>
-</div> 
-<div className="flex justify-center w-full py-2 gap-2">
-  <a href="#item1" className="btn btn-xs">1</a> 
-  <a href="#item2" className="btn btn-xs">2</a> 
-  <a href="#item3" className="btn btn-xs">3</a> 
-  <a href="#item4" className="btn btn-xs">4</a>
-</div>
-    </div>
   );
 };
 

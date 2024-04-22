@@ -1,46 +1,62 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 import { FcRight } from "react-icons/fc";
-const CollegeCard = ({college}) => {
-
-    return (
-        <div>
-            <div className="card lg:card-side bg-base-100 p-4 shadow-xl">
-              <div className='w-1/2'>
-              <figure><img className='w-full h-[200px] pt-4' src={college.picture} alt="Album"/></figure>
-              </div>
-  
-  <div className="card-body ">
-    <div className='w-[100%] mx-auto '>
-    <h2 className="card-title w-[90%] text-sm mb-4  font-mono">{college.name}</h2>
-    </div>
-    
-    <div className='flex justify-around w-auto'>
-    <li className='list-disc marker:text-red-600  '>Sports</li>
-    <li className='list-disc marker:text-yellow-400 '>Events</li>
-    </div>
-    <div>
-    <li className='list-disc marker:text-blue-400 text-center'><a className='underline  underline-offset-4 '>Researches</a></li>
-    </div>
-    <p className='text-center my-4'>Admission Date:{college.registered}</p>
-    <div className="card-actions justify-end">
-    <Link to={`/details/${college._id}`}>
-              <button className="btn bg-transparent border border-blue-500 rounded-none py-1 px-4 text-black">Veiw Details</button>
-            </Link>
-    </div>
-  
-  </div>
-  
+const CollegeCard = ({ college }) => {
+  return (
+   
+      <div className="sm:w-3/4 lg:w-auto lg:flex justify-center gap-2 rounded items-center bg-blue-100 px-4 py-6 shadow-xl">
+      <div>
+  <img
+    className="w-auto lg:w-[250px] mx-auto h-[200px]"
+    src={college.picture}
+    alt="Album"
+  />
 </div>
 
-        </div>
-    );
+<div className="flex-col justify-center items-center w-auto lg:w-[250px]  mx-auto p-6 border lg:bg-white">
+<div className="text-center  ">
+  <h2 className=" text-sm mb-4 text-center font-mono">
+    {college.name}
+  </h2>
+</div>
+
+<div className="flex justify-around w-auto">
+  <li className="list-disc marker:text-red-600  ">Sports</li>
+  <li className="list-disc marker:text-yellow-400 ">Events</li>
+</div>
+
+<div className="my-4">
+  <li className="list-disc marker:text-blue-400 text-center">
+    <a className="underline  underline-offset-4">Researches</a>
+  </li>
+</div>
+
+<p className="text-center text-blue-500 my-4">
+  Admission Date:{college.registered}
+</p>
+<div className="card-actions justify-end">
+  <Link to={`/details/${college._id}`}>
+    <button className="btn bg-transparent hover:bg-blue-200 border border-blue-500 mt-2 rounded-none py-1 px-4 text-black">
+      Veiw Details
+    </button>
+  </Link>
+</div>
+
+</div>
+       
+
+
+
+
+
+      </div>
+  
+  );
 };
 
 export default CollegeCard;
 
 
- {/* style={{ backgroundImage:`linear-gradient(transparent,black), url(${college.pcture})`,
-            backgroundRepeat: 'no-repeat',
-            backgroundSize:'cover'
-          }} */}
+{/* 
+
+ */}

@@ -4,7 +4,7 @@ import CollegeCard from "../CollegeCards/CollegeCard";
 const PopularColleges = () => {
   const [colleges, setColleges] = useState([]);
   useEffect(() => {
-    fetch("https://college-pods-server-bxw8ogyva-fariars-projects.vercel.app/collegeList")
+    fetch("https://college-pods-server.vercel.app/collegeList")
       .then((res) => res.json())
       .then((data) => {
         setColleges(data);
@@ -18,7 +18,7 @@ const PopularColleges = () => {
         <h2 className="text-4xl w-3/4 mx-auto">Discover popular Colleges</h2>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2  gap-2 w-[90vw] mx-auto my-16 py-6">
+      <div className="grid grid-cols-1 lg:grid-cols-2  w-[90vw] mx-auto gap-2  my-16 py-6">
         {popular.map((college) => (
           <CollegeCard key={college._id} college={college}></CollegeCard>
         ))}

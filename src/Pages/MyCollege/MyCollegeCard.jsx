@@ -15,7 +15,7 @@ const MyCollegeCard = ({ clg }) => {
     research,
   } = clg;
   return (
-    <div className="card w-[30vw] mx-auto mt-16 bg-base-100 mb-16 shadow-xl">
+    <div className="card lg:w-[30vw] mx-auto mt-16 bg-base-100 mb-16 shadow-xl">
       <figure className="">
         <img src={photo} alt="Shoes" className="w-3/4 py-6" />
       </figure>

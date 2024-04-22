@@ -25,8 +25,8 @@ const ReviewForm = () => {
             collegeName
         };
         
-        fetch('https://college-pods-server-bxw8ogyva-fariars-projects.vercel.app/reviewInfo',{
-            method:"POST",
+        fetch('https://college-pods-server.vercel.app/reviewInfo',{
+        method:"POST",
             headers:{
                 'content-type':'application/json'
             },
